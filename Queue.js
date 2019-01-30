@@ -86,7 +86,7 @@ class DoublyLinkedList {
 	}
 
 	removeLast() {
-		if (this.isEmpty()) return new Error("List is empty");
+		if (this.isEmpty()) return new Error("List is empty")
 
 		if (!this.head.getRight()) {
 			let head = this._removeHead()
@@ -106,7 +106,7 @@ class DoublyLinkedList {
 	}
 
 	removeFirst() {
-		if (this.isEmpty()) return new Error("List is empty");
+		if (this.isEmpty()) return new Error("List is empty")
 		
 		if (!this.head.getRight()) {
 			let head = this._removeHead()
@@ -173,8 +173,8 @@ class Queue {
 		if (index < 0) return new Error("Index cannot be less than zero")
 		if (index + 1 > this.queue.size()) return new Error("Index is out of bounds")
 
-		let counter = 0;
-		let node = this.first();
+		let counter = 0
+		let node = this.first()
 
 		while (counter !== index) {
 			node = node.getRight()
